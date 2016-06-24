@@ -314,7 +314,7 @@ var LastN = function (_EventEmitter) {
    * Analyses stream volume.
    * @param {object} [options]
    * @param {number} [options.msBetweenAnalyse=100] - The interval in ms at which stream volumes are analysed.
-   * @param {number} [options.minVolumeThreshold=0.3] - Threshold of volume for speaker change to work to deal with ambient noise. Must be a number between 0 and 1.
+   * @param {number} [options.minVolumeThreshold=0.4] - Threshold of volume for speaker change to work to deal with ambient noise. Must be a number between 0 and 1.
    * @param {number} [options.minTimeBetweenSpeakers=3000] - Minimum time in ms between newSpeaker events.
    */
 
@@ -327,7 +327,7 @@ var LastN = function (_EventEmitter) {
 
     var defaultParams = {
       msBetweenAnalyse: 100,
-      minVolumeThreshold: .3,
+      minVolumeThreshold: .4,
       minTimeBetweenSpeakers: 3000
     };
 
